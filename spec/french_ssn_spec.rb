@@ -8,7 +8,7 @@ describe "#french_ssn_message" do
     expect(actual).to eq(expected)
   end
 
-  it "returns invalid message for invalid key" do
+  it "returns invalid message if the key is invalid" do
     expected  = "The number is invalid"
     actual    = french_ssn_message("1 84 12 76 451 089 47")
 
